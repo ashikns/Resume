@@ -1,0 +1,176 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+\usepackage[scaled]{helvet}
+\usepackage{progressbar}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+\definecolor{darktext}{HTML}{414141}
+\definecolor{text}{HTML}{333333}
+\definecolor{graytext}{HTML}{333333}
+\definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{false}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\renewcommand{\bodyfontlight}{\sourcesanspro}
+\renewcommand{\baselinestretch}{1.2}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[rectangle,edge,right]{./examples/profile}
+\name{Ashik}{Salim}
+\position{Developer{\enskip\cdotp\enskip}Immersive Experiences}
+
+\mobile{(+91) 999 522 8803}
+\email{ashikns@gmail.com}
+\github{github.com/ashikns}
+\linkedin{linkedin.com/in/ashikns}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \extrainfo{extra informations}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[C]
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%-------------------------------------------------------------------------------
+\cvsection{Summary}
+\begin{cvparagraph}
+
+	Developer in immersive experiences for 3+ years, primarily working on Microsoft’s Mixed Reality platform using Unity3D. Enthusiastic about learning new technologies and discovering new tools for enhancing workflow.
+\end{cvparagraph}
+
+
+\cvsection{Work Experience}
+\begin{cventries}
+	\cventry
+	{Software Engineer} % Job title
+	{Valorem} % Organization
+	{Kerala, India} % Location
+	{September 2014 - Present} % Date(s)
+	{
+		\begin{cvitems} % Description(s) of tasks/responsibilities
+			\item \textbf{HoloBeam:} 3D Telepresence application that captures color and depth information from Kinect, transmits it over the internet and recreates it as a hologram on the remote end.
+				\begin{itemize} 
+					\item Developed native plugin for Unity3D written in C++ which achieved hardware accelerated video decoding and interoperability with WebRTC libraries.
+					\item Developed a custom codec for encoding and transmission of depth data over a traditional video stream.
+					\item Ported WebRTC implementation by Google to the UWP platform, with focus on maintaining compatibility with code and build systems used by upstream.
+				\end{itemize}
+			\item \textbf{HoloFlight:} 3D Real-time and historic flight data tracking and visualization.
+				\begin{itemize}
+					\item Developed a system to parse, filter and store positional data of flights from a web api and accurately animate 3D representational objects in a scale to world 3D space based on this data, while maintaining strict chronological accuracy.
+					\item Developed a real-time procedural terrain mesh generator using Bing maps api, combining both satellite image overlay and height maps.
+				\end{itemize}
+		\end{cvitems}
+	}
+\end{cventries}
+
+
+\cvsection{Education}
+\begin{cventries}
+	\cventry
+	{Govt. Model Engineering College} % Degree
+	{Bachelor of Technology in Computer Science} % Institution
+	{Kochi, India} % Location
+	{May 2010 - April 2014} % Date(s)
+	{
+	}
+\end{cventries}
+
+
+\vspace{-2mm}
+\cvsection{Recognitions}
+\begin{cvhonors}
+	\cvrecognition
+		{HoloBeam} % Position
+		{Presented at keynote of Inspire 2018 by Satya Nadella} % Committee
+		{July 2018} % Location
+		{}
+		
+	\cvrecognition
+		{HoloBeam} % Position
+		{Showcased at CES 2018 by invitation from Microsoft} % Committee
+		{January 2018} % Location
+		{}
+		
+	\cvrecognition
+		{HoloFlight} % Position
+		{Showcased at Unite India 2017} % Committee
+		{November 2017} % Location
+		{}
+\end{cvhonors}
+
+\vspace{2mm}
+\cvsection{Certifications}
+\begin{cvhonors}
+	\cvcertification
+	{} % Position
+	{Unity certified developer} % Committee
+	{November 2017 - Present} % Location
+	{}
+\end{cvhonors}
+
+
+\vspace{2mm}
+\cvsection{Skills}
+\vspace{4mm}
+\newline
+\begin{tabular}{l r}
+	\paragraphstyle{Unity3D} & \progressbar{0.7} \\
+	\paragraphstyle{CSharp} & \progressbar{0.8} \\
+	\paragraphstyle{C++ (Including C11 and higher)} & \progressbar{0.6} \\
+	\paragraphstyle{SourceControl (Git)} & \progressbar{0.8} \\
+\end{tabular}
+%-------------------------------------------------------------------------------
+\end{document}
