@@ -52,7 +52,8 @@
 \renewcommand{\bodyfontlight}{\sourcesanspro}
 \renewcommand{\baselinestretch}{1.2}
 
-\hyphenation{Microsoft}
+\hyphenpenalty=1000
+\exhyphenpenalty=1000
 
 %-------------------------------------------------------------------------------
 %	PERSONAL INFORMATION
@@ -103,27 +104,27 @@
 	{September 2014 - Present} % Date(s)
 	{
 		\begin{cvitems} % Description(s) of tasks/responsibilities
-			\item \textbf{XPresent:} Rich content presentation application which enables users to present interactive elements such as 3D models and real-time on-screen drawing.
+			\item \textbf{XPresent:} Rich content presentation application which enables users to present interactive elements such as 3D models and real-time on-screen drawing
 				\begin{itemize} 
-					\item Investigated Apache licensed hand recognition model from Mediapipe by Google and converted it into ONNX, enabling native inference on UWP via WinML.
-					\item Developed a simple state machine for hand recognition with 5 gestures and experimental drawing support.
-					\item Modified Directshow based virtual webcam to work with UWP, enabling easy interfacing with existing meeting solutions like Microsoft Teams.
+					\item Investigated Apache licensed hand recognition model from Mediapipe by Google and converted it into ONNX, enabling native inference on UWP via WinML
+					\item Developed a simple state machine for hand recognition with 5 gestures and experimental drawing support
+					\item Modified Directshow based virtual webcam to work with UWP, enabling easy interfacing with existing meeting solutions like Microsoft Teams
 				\end{itemize}
-			\item \textbf{HoloBeam:} 3D Telepresence application that captures color and depth information from Kinect, transmits it over the internet and enables viewing it as a hologram using HoloLens on the remote end.
+			\item \textbf{HoloBeam:} 3D Telepresence application that captures color and depth information from Kinect, transmits it over the internet and enables viewing it as a hologram using HoloLens on the remote end
 				\begin{itemize} 
-					\item Developed native plugin for Unity3D written in C++ which achieved hardware accelerated video decoding and interoperability with WebRTC libraries.
-					\item Developed a custom codec for encoding and transmission of depth data over a traditional H.264 video stream.
-					\item Ported WebRTC implementation by Google to the UWP platform, with focus on maintaining compatibility with code and build systems used by upstream.
+					\item Developed native plugin for Unity3D written in C++ which achieved hardware accelerated video decoding and interoperability with WebRTC libraries
+					\item Developed a custom codec for encoding and transmission of depth data over a traditional H.264 video stream
+					\item Ported WebRTC implementation by Google to the UWP platform, with focus on maintaining compatibility with code and build systems used by upstream
 				\end{itemize}
-			\item \textbf{HoloFlight:} 3D Real-time and historic flight data tracking and visualization on HoloLens.
+			\item \textbf{HoloFlight:} 3D Real-time and historic flight data tracking and visualization on HoloLens
 				\begin{itemize}
-					\item Developed a system to parse, filter and store positional data of flights from a web api and accurately animate 3D representational objects in a scale to world 3D space based on this data, while maintaining strict chronological accuracy.
-					\item Developed a real-time procedural terrain mesh generator using Bing maps api, combining both satellite image overlay and height maps.
+					\item Developed a system to parse, filter and store positional data of flights from a web api and accurately animate 3D representational objects in a scale to world 3D space based on this data, while maintaining strict chronological accuracy
+					\item Developed a real-time procedural terrain mesh generator using Bing maps api, combining both satellite image overlay and height maps
 				\end{itemize}
-			\item \textbf{Azure Spatial Anchors Showcase:} Android/iOS application that allows users to load 3D models and place them in real world to demonstrate the capabilities of Azure Spatial Anchors by Microsoft.
+			\item \textbf{Azure Spatial Anchors Showcase:} Android/iOS application that allows users to load 3D models and place them in real world to demonstrate the capabilities of Azure Spatial Anchors by Microsoft
 				\begin{itemize}
-					\item Developed multi-user synchronized object manipulation module based on SignalR.
-					\item Wrote native plugins for Android, iOS to enable MSA authentication in a Unity3D application using MSAL library by Microsoft.
+					\item Developed multi-user synchronized object manipulation module based on SignalR
+					\item Wrote native plugins for Android, iOS to enable MSA authentication in a Unity3D application using MSAL library by Microsoft
 				\end{itemize}
 		\end{cvitems}
 	}
