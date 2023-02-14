@@ -91,7 +91,7 @@
 \cvsection{Summary}
 \begin{cvparagraph}
 
-	Software engineer across multiple domains for 7 years, with a prime focus on Microsoft Mixed Reality technologies. Seeking ways to apply technology ethically for betterment of humanity.
+	Software engineer across multiple domains for 8+ years, with a prime focus on Microsoft technologies - Mixed Reailty, Azure Spatial Anchors, WinML, UWP. Worked on multiple applications developed for HoloLens in Unity3D, multiple of them showcased internationally. Currently seeking a career that provides an opportunity for results from genuine innovation.
 \end{cvparagraph}
 
 
@@ -104,33 +104,33 @@
 	{September 2014 - Present} % Date(s)
 	{
 		\begin{cvitems} % Description(s) of tasks/responsibilities
-			\item \textbf{XPresent:} Rich content presentation application which enables users to present interactive elements such as 3D models and real-time on-screen drawing
+			\item \textbf{HoloBeam:} 3D Telepresence application that captures color and depth information from Kinect, transmits it over the internet and enables viewing it as a hologram using HoloLens on the remote end, developed in Unity.
 				\begin{itemize} 
-					\item Investigated Apache licensed hand recognition model from Mediapipe by Google and converted it into ONNX, enabling native inference on UWP via WinML
-					\item Developed a simple state machine for hand recognition with 5 gestures and experimental drawing support
-					\item Modified Directshow based virtual webcam to work with UWP, enabling easy interfacing with existing meeting solutions like Microsoft Teams
+					\item Developed native plugin for Unity3D written in C++ which achieved hardware accelerated video decoding and interoperability with WebRTC libraries.
+					\item Developed a custom codec for encoding and transmission of depth data over a traditional H.264 video stream.
+					\item Ported WebRTC implementation by Google to the UWP platform, with focus on maintaining compatibility with code and build systems used by upstream.
 				\end{itemize}
-			\item \textbf{HoloBeam:} 3D Telepresence application that captures color and depth information from Kinect, transmits it over the internet and enables viewing it as a hologram using HoloLens on the remote end
+			\item \textbf{HoloFlight:} 3D Real-time and historic flight data tracking and visualization on HoloLens, developed in Unity.
+				\begin{itemize}
+					\item Developed a system to parse, filter and store positional data of flights from a web api and accurately animate 3D representational objects in a scale to world 3D space based on this data.
+					\item Developed a real-time procedural terrain mesh generator using Bing maps api, combining both satellite image overlay and height maps.
+				\end{itemize}
+			\item \textbf{Azure Spatial Anchors Showcase:} Android/iOS application that allows users to load 3D models and place them in real world to demonstrate the capabilities of Azure Spatial Anchors by Microsoft, developed in Unity.
+				\begin{itemize}
+					\item Developed multi-user synchronized object manipulation module based on SignalR.
+					\item Wrote native plugins for Android, iOS to enable MSA authentication in a Unity3D application using MSAL library by Microsoft.
+				\end{itemize}
+			\item \textbf{XPresent:} Rich content presentation application which enables users to present interactive elements such as 3D models and real-time on-screen drawing.
 				\begin{itemize} 
-					\item Developed native plugin for Unity3D written in C++ which achieved hardware accelerated video decoding and interoperability with WebRTC libraries
-					\item Developed a custom codec for encoding and transmission of depth data over a traditional H.264 video stream
-					\item Ported WebRTC implementation by Google to the UWP platform, with focus on maintaining compatibility with code and build systems used by upstream
-				\end{itemize}
-			\item \textbf{HoloFlight:} 3D Real-time and historic flight data tracking and visualization on HoloLens
-				\begin{itemize}
-					\item Developed a system to parse, filter and store positional data of flights from a web api and accurately animate 3D representational objects in a scale to world 3D space based on this data, while maintaining strict chronological accuracy
-					\item Developed a real-time procedural terrain mesh generator using Bing maps api, combining both satellite image overlay and height maps
-				\end{itemize}
-			\item \textbf{Azure Spatial Anchors Showcase:} Android/iOS application that allows users to load 3D models and place them in real world to demonstrate the capabilities of Azure Spatial Anchors by Microsoft
-				\begin{itemize}
-					\item Developed multi-user synchronized object manipulation module based on SignalR
-					\item Wrote native plugins for Android, iOS to enable MSA authentication in a Unity3D application using MSAL library by Microsoft
+					\item Investigated Apache licensed hand recognition model from Mediapipe by Google and converted it into ONNX, enabling native inference on UWP via WinML.
+					\item Developed a simple state machine for hand recognition with 5 gestures and experimental drawing support.
+					\item Modified Directshow based virtual webcam to work with UWP, enabling easy interfacing with existing meeting solutions like Microsoft Teams.
 				\end{itemize}
 		\end{cvitems}
 	}
 \end{cventries}
 
-
+\vspace{-1mm}
 \cvsection{Education}
 \begin{cventries}
 	\cventry
@@ -143,13 +143,13 @@
 \end{cventries}
 
 
-\vspace{-2mm}
+\vspace{-6mm}
 \cvsection{Recognitions}
 \begin{cvhonors}
 	\cvrecognition
-		{HoloBeam} % Position
-		{Presented at keynote of Inspire 2018 by Satya Nadella} % Committee
-		{July 2018} % Location
+		{HoloFlight} % Position
+		{Showcased at Unite India 2017} % Committee
+		{November 2017} % Location
 		{}
 		
 	\cvrecognition
@@ -159,9 +159,15 @@
 		{}
 		
 	\cvrecognition
+		{HoloBeam} % Position
+		{Presented at keynote of Inspire 2018 by Satya Nadella} % Committee
+		{July 2018} % Location
+		{}
+
+	\cvrecognition
 		{HoloFlight} % Position
-		{Showcased at Unite India 2017} % Committee
-		{November 2017} % Location
+		{Presented at NASTech 2022} % Committee
+		{December 2022} % Location
 		{}
 \end{cvhonors}
 
