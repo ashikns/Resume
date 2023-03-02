@@ -66,8 +66,8 @@
 
 \mobile{(+91) 999 522 8803}
 \email{ashikns@gmail.com}
-\github{github.com/ashikns}
 \linkedin{linkedin.com/in/ashikns}
+%\github{github.com/ashikns}
 % \gitlab{gitlab-id}
 % \stackoverflow{SO-id}{SO-name}
 % \twitter{@twit}
@@ -91,7 +91,7 @@
 \cvsection{Summary}
 \begin{cvparagraph}
 
-	Software engineer across multiple domains for 8+ years, with a prime focus on Microsoft technologies - Mixed Reailty, Azure Spatial Anchors, WinML, UWP. Worked on multiple applications developed for HoloLens in Unity3D, multiple of them showcased internationally. Currently seeking a career that provides an opportunity for results from genuine innovation.
+	Software engineer across multiple domains for 8+ years, with a prime focus on Microsoft technologies - Mixed Reailty, Azure, WinML, UWP, WPF. Worked on multiple applications developed for HoloLens in Unity3D, multiple of them showcased internationally. Recently diversified to acquire experience in Machine Learning and Rust langugage.
 \end{cvparagraph}
 
 
@@ -104,27 +104,35 @@
 	{September 2014 - Present} % Date(s)
 	{
 		\begin{cvitems} % Description(s) of tasks/responsibilities
-			\item \textbf{HoloBeam:} 3D Telepresence application that captures color and depth information from Kinect, transmits it over the internet and enables viewing it as a hologram using HoloLens on the remote end, developed in Unity.
+			\item HoloBeam: 3D Telepresence application that captures color and depth information from Kinect, transmits it over the internet and recreates it as a point cloud in HoloLens.
 				\begin{itemize} 
-					\item Developed native plugin for Unity3D written in C++ which achieved hardware accelerated video decoding and interoperability with WebRTC libraries.
+					\item Developed native plugin for Unity3D written in C++ to enable hardware accelerated video decoding and transport over WebRTC.
 					\item Developed a custom codec for encoding and transmission of depth data over a traditional H.264 video stream.
-					\item Ported WebRTC implementation by Google to the UWP platform, with focus on maintaining compatibility with code and build systems used by upstream.
+					\item Ported WebRTC implementation by Google to the UWP platform.
 				\end{itemize}
-			\item \textbf{HoloFlight:} 3D Real-time and historic flight data tracking and visualization on HoloLens, developed in Unity.
+\vspace{1mm}
+			\item HoloFlight: 3D Real-time flight data tracking and visualization on HoloLens, developed in Unity.
 				\begin{itemize}
-					\item Developed a system to parse, filter and store positional data of flights from a web api and accurately animate 3D representational objects in a scale to world 3D space based on this data.
-					\item Developed a real-time procedural terrain mesh generator using Bing maps api, combining both satellite image overlay and height maps.
+					\item Developed a system to parse, filter and store flight position data and represent this using 3D objects viewable in Mixed Reality.
+					\item Developed a real-time procedural terrain mesh generator using Bing/Google maps api, combining both satellite image overlay and height maps.
 				\end{itemize}
-			\item \textbf{Azure Spatial Anchors Showcase:} Android/iOS application that allows users to load 3D models and place them in real world to demonstrate the capabilities of Azure Spatial Anchors by Microsoft, developed in Unity.
-				\begin{itemize}
-					\item Developed multi-user synchronized object manipulation module based on SignalR.
-					\item Wrote native plugins for Android, iOS to enable MSA authentication in a Unity3D application using MSAL library by Microsoft.
-				\end{itemize}
-			\item \textbf{XPresent:} Rich content presentation application which enables users to present interactive elements such as 3D models and real-time on-screen drawing.
+\vspace{1mm}
+			\item XPresent: Rich content presentation application which enables users to present interactive elements such as 3D models and real-time on-screen drawing.
 				\begin{itemize} 
-					\item Investigated Apache licensed hand recognition model from Mediapipe by Google and converted it into ONNX, enabling native inference on UWP via WinML.
+					\item Converted hand recognition model from Mediapipe by Google into ONNX, enabling native inference on UWP via WinML.
 					\item Developed a simple state machine for hand recognition with 5 gestures and experimental drawing support.
 					\item Modified Directshow based virtual webcam to work with UWP, enabling easy interfacing with existing meeting solutions like Microsoft Teams.
+				\end{itemize}
+\vspace{1mm}
+			\item Video streaming application on Xbox UWP for one of the biggest media/animation companies in the world.
+				\begin{itemize}
+					\item Implemented multiple advanced UI features, including completely original UWP Composition based animations and effects.
+				\end{itemize}
+\vspace{1mm}
+			\item Live sports video streaming for leading sports network, developed in Rust.
+				\begin{itemize}
+					\item Developed UI and interfacing layer against a custom Rust backend which targeted WebAssembly.
+					\item Performance targeted to run on smart TVs and other limited computational devices.
 				\end{itemize}
 		\end{cvitems}
 	}
